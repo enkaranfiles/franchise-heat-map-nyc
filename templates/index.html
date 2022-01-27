@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="../static/styles/style.css" />
+    <script src="../static/scripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+    <div class="brand-container">
+        <input type="checkbox" id="burgerKing" name="burgerKing" onclick="brandClicked()">
+        <label for="burgerKing">Burger King</label>
+        <input type="checkbox" id="mcDonalds" name="mcDonalds" onclick="brandClicked()">
+        <label for="mcDonalds">McDonalds</label>
+        <input type="checkbox" id="shakeShack" name="shakeShack" onclick="brandClicked()">
+        <label for="shakeShack">Shake Shack</label>
+        <input type="checkbox" id="fiveGuys" name="fiveGuys" onclick="brandClicked()">
+        <label for="fiveGuys">Five Guys</label>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-kQxVA3Kq6lLK0gll3kFspqC0usSL1C0&callback=initMap&libraries=visualization&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
