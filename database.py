@@ -4,7 +4,7 @@ from app import app
 import json
 
 
-CONNECTION_STRING = "mongodb+srv://eneskar:Sherlock1.@cluster0.s8rs2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+CONNECTION_STRING = "YOUR_CONN_STR"
 client = pymongo.MongoClient(CONNECTION_STRING)
 db = client.get_database('flask_mongodb_atlas')
 user_collection = pymongo.collection.Collection(db, 'user_collection')
